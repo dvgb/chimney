@@ -35,8 +35,10 @@ modules:
         - lazygit
         - ranger
         - zsh
+        - qt6ct
         - syncthing
         - tailscale
+        - mpv
 
   - type: bling
     install:
