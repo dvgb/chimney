@@ -25,10 +25,12 @@ modules:
         - dejan/lazygit
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     install:
       packages:
         - niri
         - dms
+        - noctalia-shell
         - neovim
         - ripgrep
         - bat
