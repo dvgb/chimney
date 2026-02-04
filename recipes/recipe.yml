@@ -45,6 +45,7 @@ modules:
     remove:
       packages:
         - dunst
+        - mako
 
   - type: bling
     install:
