@@ -21,7 +21,6 @@ modules:
     repos:
       copr:
         - yalter/niri
-        - avengemedia/dms
         - dejan/lazygit
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
@@ -29,8 +28,9 @@ modules:
     install:
       packages:
         - niri
-        # - dms
         - noctalia-shell
+        - mise
+        - chezmoi
         - neovim
         - ripgrep
         - bat
@@ -50,11 +50,33 @@ modules:
     install:
       - 1password
 
+  - type: brew
+    nofile-limits: true # increase nofile limits
+    brew-analytics: false # disable telemetry
+    direct-pull: true # was getting `curl: (6) Could not resolve host: null`
+
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
         scope: system
       - scope: user # Also add Flathub user repo, but no user packages
+
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - Meslo # don't add spaces or "Nerd Font" suffix
+        - SourceCodePro
+        - Monaspace
+        - NerdFontsSymbolsOnly
+      # google-fonts:
+      #   - Roboto
+      #   - Open Sans
+      #   - Inter
+      # url-fonts:
+      #   - name: CustomFont
+      #     url: https://example.com/my-font.otf
+      #   - name: CompanyFonts
+      #     url: https://company.com/fonts.tar.gz
 
   - type: systemd
     system:
