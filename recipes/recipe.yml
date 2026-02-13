@@ -42,6 +42,8 @@ modules:
         - tailscale
         - mpv
         - iperf3
+      exclude:
+        - mako
     remove:
       packages:
         - dunst
