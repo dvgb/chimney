@@ -35,13 +35,18 @@ modules:
         - ripgrep
         - bat
         - lazygit
-        - ranger
         - zsh
         - qt6ct
         - syncthing
         - tailscale
         - mpv
         - iperf3
+        - ghostty
+        - vicinae
+        - jujutsu
+        - lazyjj
+        - tealdeer
+        - nwg-look
       exclude:
         - mako
     remove:
