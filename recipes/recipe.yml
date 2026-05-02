@@ -41,12 +41,13 @@ modules:
         - tailscale
         - mpv
         - iperf3
-        - ghostty
+        # - ghostty # too slow
         - vicinae
         - jujutsu
         # - lazyjj
         - tealdeer
         - nwg-look
+        - kde-connect
       exclude:
         - mako
     remove:
@@ -65,7 +66,7 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
+      - notify: false # Send notification after install/uninstall is finished (true/false)
         scope: system
       - scope: user # Also add Flathub user repo, but no user packages
 
