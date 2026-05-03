@@ -25,6 +25,7 @@ modules:
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
         - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+        - https://repository.mullvad.net/rpm/stable/mullvad.repo
     install:
       packages:
         - niri
@@ -48,6 +49,7 @@ modules:
         - tealdeer
         - nwg-look
         - kde-connect
+        - mullvad-vpn
       exclude:
         - mako
     remove:
