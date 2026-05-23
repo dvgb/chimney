@@ -42,7 +42,7 @@ modules:
         - tailscale
         - mpv
         - iperf3
-        # - ghostty # too slow
+        - ghostty # too slow?
         - vicinae
         - jujutsu
         # - lazyjj
@@ -62,7 +62,6 @@ modules:
       packages:
         - dunst
         - mako
-
 
   - type: bling
     install:
