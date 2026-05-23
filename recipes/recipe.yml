@@ -50,12 +50,18 @@ modules:
         - nwg-look
         - kde-connect
         - mullvad-vpn
+        - sdl2
+        - sdl2_image
+        - sdl2_ttf
+        - sdl2_mixer
+        - freetype
       exclude:
         - mako
     remove:
       packages:
         - dunst
         - mako
+
 
   - type: bling
     install:
