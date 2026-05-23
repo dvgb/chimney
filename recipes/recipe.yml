@@ -50,11 +50,12 @@ modules:
         - nwg-look
         - kde-connect
         - mullvad-vpn
-        - sdl2
-        - sdl2_image
-        - sdl2_ttf
-        - sdl2_mixer
+        - SDL2
+        - SDL2_image
+        - SDL2_ttf
+        - SDL2_mixer
         - freetype
+        - zip
       exclude:
         - mako
     remove:
