@@ -31,8 +31,12 @@ modules:
     install:
       packages:
         - niri
-        - noctalia-shell
+        # - noctalia-shell
         - dms
+        - adw-gtk3-theme
+        - cups-pk-helper
+        - dms-greeter
+        - dgop
         - cava
         - cliphist
         - wl-clipboard
@@ -52,12 +56,14 @@ modules:
         - mpv
         - iperf3
         - ghostty # too slow?
+        - ranger
         - vicinae
         - jujutsu
         # - lazyjj
         - tealdeer
         - nwg-look
         - kde-connect
+        - krusader
         - mullvad-vpn
         - SDL2
         - SDL2_image
