@@ -20,6 +20,8 @@ modules:
   - type: dnf
     repos:
       copr:
+        - avengemedia/danklinux
+        - avengemedia/dms
         - yalter/niri
         - dejan/lazygit
       files:
@@ -29,7 +31,12 @@ modules:
     install:
       packages:
         - niri
-        - noctalia-shell
+        - dms
+        - cava
+        - cliphist
+        - wl-clipboard
+        - danksearch
+        - matugen
         - mise
         - chezmoi
         - neovim
@@ -38,6 +45,7 @@ modules:
         - lazygit
         - zsh
         - qt6ct
+        - qt6-qtmultimedia
         - syncthing
         - tailscale
         - mpv
